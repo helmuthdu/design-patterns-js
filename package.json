@@ -1,0 +1,47 @@
+{
+  "name": "design-pattern-js",
+  "version": "1.0.0",
+  "description": "Design patterns implemented in javascript",
+  "main": "index.js",
+  "scripts": {
+    "build-docs": "node ./build-docs.js",
+    "lint": "eslint --cache --fix src/**/*.js tests/**/*.js",
+    "test": "mocha test/**/*.js --require babel-core/register",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "fs-extra-promise": "^1.0.1",
+    "istanbul": "^1.0.0-alpha",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^11.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helmuthdu/design-pattern-js.git"
+  },
+  "keywords": [
+    "design",
+    "patterns",
+    "gof"
+  ],
+  "author": "Helemuth Saatkamp<helmuthdu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helmuthdu/design-pattern-js/issues"
+  },
+  "homepage": "https://github.com/helmuthdu/design-pattern-js#readme"
+}
