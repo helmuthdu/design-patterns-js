@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import {
   Discount,
   ShoppingCart
-} from '../src/behavioral/chain-of-responsability/Discount'
+} from '../src/behavioral/chain-of-responsibility/Discount'
 
 describe('behavioral->chain-of-responsibility: ShoppingCart', () => {
   let shoppingCart
