@@ -1,21 +1,21 @@
 const createDroid = {
   battle: () => new B1(),
   pilot: () => new Rx24(),
-  default: () => new DroidSkeleton()
+  default: () => {
+    throw new TypeError('Unknown Droid Type')
+  }
 }
 
 const DroidFactory = {
   create (type) {
-    return (createDroid[type] || createDroid.default)(type)
+    return (createDroid[type] || createDroid.default)()
   }
 }
 
-function DroidSkeleton () {
-  this.name = 'Unknown'
-  this.type = 'Skeleton'
+function Droid () {
 }
 
-DroidSkeleton.prototype.info = function () {
+Droid.prototype.info = function () {
   return `${this.name}, ${this.type} Droid`
 }
 
@@ -24,13 +24,13 @@ function B1 () {
   this.type = 'Battle'
 }
 
-B1.prototype = Object.create(DroidSkeleton.prototype)
+B1.prototype = Object.create(Droid.prototype)
 
 function Rx24 () {
   this.name = 'Rx24'
   this.type = 'Pilot'
 }
 
-Rx24.prototype = Object.create(DroidSkeleton.prototype)
+Rx24.prototype = Object.create(Droid.prototype)
 
 module.exports = { DroidFactory }

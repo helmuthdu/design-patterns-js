@@ -4,7 +4,7 @@ import {
   TrafficTower
 } from '../src/behavioral/mediator/TrafficTower.es6'
 
-describe('behavioral->mediator: TrafficTower', () => {
+describe('behavioral->mediator: TrafficTower.es6', () => {
   it('should get position of all airplanes', () => {
     const trafficTower = new TrafficTower()
     const airplanes = [10, 15, 55].map(value => new Airplane(value, trafficTower))

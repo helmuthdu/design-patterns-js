@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { Caretaker, Dictionary } from '../src/behavioral/memento/Caretaker.es6.js'
 
-describe('behavioral->memento: Caretaker', () => {
+describe('behavioral->memento: Caretaker.es6', () => {
   it('should create a list of words', () => {
     const caretaker = new Caretaker()
     caretaker.addMemento(Dictionary.create('hello'))

@@ -13,7 +13,7 @@ describe('creational->abstract-factory: DroidFactory', () => {
   })
 
   it('should create a skeleton droid', () => {
-    expect(DroidFactory.create('jedi').info())
-      .to.equal('Unknown, Skeleton Droid')
+    expect(() => DroidFactory.create('jedi'))
+      .to.throw()
   })
 })

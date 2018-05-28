@@ -1,18 +1,20 @@
 const createDroid = {
   battle: () => new B1(),
   pilot: () => new Rx24(),
-  default: () => new Droid()
+  default: () => {
+    throw new TypeError('Unknown Droid Type')
+  }
 }
 
 const DroidFactory = {
   create (type) {
-    return (createDroid[type] || createDroid.default)(type)
+    return (createDroid[type] || createDroid.default)()
   }
 }
 
 class Droid {
-  name = 'Unknown'
-  type = 'Skeleton'
+  name = ''
+  type = ''
 
   info () {
     return `${this.name}, ${this.type} Droid`
