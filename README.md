@@ -1,4 +1,4 @@
-## Design Patterns JS [![Coverage Status](https://coveralls.io/repos/github/helmuthdu/design-patterns-js/badge.svg?branch=master)](https://coveralls.io/github/helmuthdu/design-patterns-js?branch=master)
+## Design Patterns JS [![Build Status](https://travis-ci.org/helmuthdu/design-patterns-js.svg?branch=master)](https://travis-ci.org/helmuthdu/design-patterns-js) [![Coverage Status](https://coveralls.io/repos/github/helmuthdu/design-patterns-js/badge.svg?branch=master)](https://coveralls.io/github/helmuthdu/design-patterns-js?branch=master)
 
 Here you will find the 23 (GoF) design patterns implemented in JavaScript using both prototype and ES6 classes. You can use the [**docs**](docs/_index.md) to quicky overview the examples.
 
