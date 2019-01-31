@@ -1,69 +1,69 @@
-function Cockpit (command) {
-  this.command = command
+function Cockpit(command) {
+  this.command = command;
 }
 
-Cockpit.prototype.execute = function () {
-  this.command.execute()
+Cockpit.prototype.execute = function() {
+  this.command.execute();
+};
+
+function Turbine() {
+  this.speed = 0;
+  this.state = false;
 }
 
-function Turbine () {
-  this.speed = 0
-  this.state = false
+Turbine.prototype.on = function() {
+  this.state = true;
+  this.speed = 100;
+};
+
+Turbine.prototype.off = function() {
+  this.speed = 0;
+  this.state = false;
+};
+
+Turbine.prototype.speedDown = function() {
+  if (!this.state) return;
+
+  this.speed -= 100;
+};
+
+Turbine.prototype.speedUp = function() {
+  if (!this.state) return;
+
+  this.speed += 100;
+};
+
+function OnCommand(turbine) {
+  this.turbine = turbine;
 }
 
-Turbine.prototype.on = function () {
-  this.state = true
-  this.speed = 100
+OnCommand.prototype.execute = function() {
+  this.turbine.on();
+};
+
+function OffCommand(turbine) {
+  this.turbine = turbine;
 }
 
-Turbine.prototype.off = function () {
-  this.speed = 0
-  this.state = false
+OffCommand.prototype.execute = function() {
+  this.turbine.off();
+};
+
+function SpeedUpCommand(turbine) {
+  this.turbine = turbine;
 }
 
-Turbine.prototype.speedDown = function () {
-  if (!this.state) return
+SpeedUpCommand.prototype.execute = function() {
+  this.turbine.speedUp();
+};
 
-  this.speed -= 100
+function SpeedDownCommand(turbine) {
+  this.turbine = turbine;
 }
 
-Turbine.prototype.speedUp = function () {
-  if (!this.state) return
-
-  this.speed += 100
-}
-
-function OnCommand (turbine) {
-  this.turbine = turbine
-}
-
-OnCommand.prototype.execute = function () {
-  this.turbine.on()
-}
-
-function OffCommand (turbine) {
-  this.turbine = turbine
-}
-
-OffCommand.prototype.execute = function () {
-  this.turbine.off()
-}
-
-function SpeedUpCommand (turbine) {
-  this.turbine = turbine
-}
-
-SpeedUpCommand.prototype.execute = function () {
-  this.turbine.speedUp()
-}
-
-function SpeedDownCommand (turbine) {
-  this.turbine = turbine
-}
-
-SpeedDownCommand.prototype.execute = function () {
-  this.turbine.speedDown()
-}
+SpeedDownCommand.prototype.execute = function() {
+  this.turbine.speedDown();
+};
 
 module.exports = {
   Cockpit,
@@ -71,5 +71,5 @@ module.exports = {
   OnCommand,
   OffCommand,
   SpeedUpCommand,
-  SpeedDownCommand
-}
+  SpeedDownCommand,
+};

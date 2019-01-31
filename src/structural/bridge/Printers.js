@@ -1,41 +1,41 @@
-function Printer (ink) {
-  this.ink = ink
+function Printer(ink) {
+  this.ink = ink;
 }
 
-function EpsonPrinter (ink) {
-  Printer.call(this, ink)
+function EpsonPrinter(ink) {
+  Printer.call(this, ink);
 }
 
-EpsonPrinter.prototype.print = function () {
-  return `Printer: Epson, Ink: ${this.ink.get()}`
+EpsonPrinter.prototype.print = function() {
+  return `Printer: Epson, Ink: ${this.ink.get()}`;
+};
+
+function HPPrinter(ink) {
+  Printer.call(this, ink);
 }
 
-function HPPrinter (ink) {
-  Printer.call(this, ink)
+HPPrinter.prototype.print = function() {
+  return `Printer: HP, Ink: ${this.ink.get()}`;
+};
+
+function Ink(type) {
+  this.type = type;
 }
 
-HPPrinter.prototype.print = function () {
-  return `Printer: HP, Ink: ${this.ink.get()}`
+Ink.prototype.get = function() {
+  return this.type;
+};
+
+function AcrylicInk() {
+  Ink.call(this, 'acrylic-based');
 }
 
-function Ink (type) {
-  this.type = type
+AcrylicInk.prototype = Object.create(Ink.prototype);
+
+function AlcoholInk() {
+  Ink.call(this, 'alcohol-based');
 }
 
-Ink.prototype.get = function () {
-  return this.type
-}
+AlcoholInk.prototype = Object.create(Ink.prototype);
 
-function AcrylicInk () {
-  Ink.call(this, 'acrylic-based')
-}
-
-AcrylicInk.prototype = Object.create(Ink.prototype)
-
-function AlcoholInk () {
-  Ink.call(this, 'alcohol-based')
-}
-
-AlcoholInk.prototype = Object.create(Ink.prototype)
-
-module.exports = { EpsonPrinter, HPPrinter, AcrylicInk, AlcoholInk }
+module.exports = { EpsonPrinter, HPPrinter, AcrylicInk, AlcoholInk };

@@ -1,13 +1,13 @@
 class Person {
-  static instance = undefined
+  static instance = undefined;
 
-  constructor () {
+  constructor() {
     if (typeof Person.instance === 'object') {
-      return Person.instance
+      return Person.instance;
     }
-    Person.instance = this
-    return this
+    Person.instance = this;
+    return this;
   }
 }
 
-export { Person }
+export { Person };

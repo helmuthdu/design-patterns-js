@@ -1,16 +1,16 @@
 class List {
-  constructor (el) {
-    this.index = 0
-    this.elements = el
+  constructor(el) {
+    this.index = 0;
+    this.elements = el;
   }
 
-  next () {
-    return this.elements[this.index++]
+  next() {
+    return this.elements[this.index++];
   }
 
-  hasNext () {
-    return this.index < this.elements.length
+  hasNext() {
+    return this.index < this.elements.length;
   }
 }
 
-export default List
+export default List;

@@ -1,11 +1,11 @@
-function Person () {
+function Person() {
   if (typeof Person.instance === 'object') {
-    return Person.instance
+    return Person.instance;
   }
 
-  Person.instance = this
+  Person.instance = this;
 
-  return this
+  return this;
 }
 
-module.exports = { Person }
+module.exports = { Person };

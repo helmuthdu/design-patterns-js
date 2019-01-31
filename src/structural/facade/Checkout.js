@@ -1,22 +1,22 @@
-function Checkout () {}
+function Checkout() {}
 
-Checkout.prototype.calc = function (price) {
-  price = discount(price)
-  price += fees(price)
-  price += shipping()
-  return price
+Checkout.prototype.calc = function(price) {
+  price = discount(price);
+  price += fees(price);
+  price += shipping();
+  return price;
+};
+
+function discount(value) {
+  return value * 0.9;
 }
 
-function discount (value) {
-  return value * 0.9
+function shipping() {
+  return 5;
 }
 
-function shipping () {
-  return 5
+function fees(value) {
+  return value * 1.05;
 }
 
-function fees (value) {
-  return value * 1.05
-}
-
-module.exports = { Checkout }
+module.exports = { Checkout };

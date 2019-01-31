@@ -1,9 +1,9 @@
-function Clonable (name) {
-  this.name = name
+function Clonable(name) {
+  this.name = name;
 }
 
-Clonable.prototype.clone = function () {
-  return new Clonable(this.name)
-}
+Clonable.prototype.clone = function() {
+  return new Clonable(this.name);
+};
 
-module.exports = { Clonable }
+module.exports = { Clonable };

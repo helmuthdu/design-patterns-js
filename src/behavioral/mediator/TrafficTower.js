@@ -1,19 +1,19 @@
-function TrafficTower () {
-  this.airplanes = []
+function TrafficTower() {
+  this.airplanes = [];
 }
 
-TrafficTower.prototype.requestPositions = function () {
-  return this.airplanes.map(airplane => airplane.position)
+TrafficTower.prototype.requestPositions = function() {
+  return this.airplanes.map(airplane => airplane.position);
+};
+
+function Airplane(position, trafficTower) {
+  this.position = position;
+  this.trafficTower = trafficTower;
+  this.trafficTower.airplanes.push(this);
 }
 
-function Airplane (position, trafficTower) {
-  this.position = position
-  this.trafficTower = trafficTower
-  this.trafficTower.airplanes.push(this)
-}
+Airplane.prototype.requestPositions = function() {
+  return this.trafficTower.requestPositions();
+};
 
-Airplane.prototype.requestPositions = function () {
-  return this.trafficTower.requestPositions()
-}
-
-module.exports = { TrafficTower, Airplane }
+module.exports = { TrafficTower, Airplane };

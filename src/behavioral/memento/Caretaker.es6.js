@@ -1,30 +1,30 @@
 class Memento {
-  constructor (value) {
-    this.value = value
+  constructor(value) {
+    this.value = value;
   }
 }
 
 const Dictionary = {
-  create (val) {
-    return new Memento(val)
+  create(val) {
+    return new Memento(val);
   },
-  restore (memento) {
-    return memento.value
-  }
-}
+  restore(memento) {
+    return memento.value;
+  },
+};
 
 class Caretaker {
-  constructor () {
-    this.values = []
+  constructor() {
+    this.values = [];
   }
 
-  addMemento (memento) {
-    this.values.push(memento)
+  addMemento(memento) {
+    this.values.push(memento);
   }
 
-  getMemento (index) {
-    return this.values[index]
+  getMemento(index) {
+    return this.values[index];
   }
 }
 
-export { Dictionary, Caretaker }
+export { Dictionary, Caretaker };
