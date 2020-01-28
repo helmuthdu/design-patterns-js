@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import List from '../List.es6.js';
+import List from '../List.es6';
 
 describe('behavioral->iterator: List.es6', () => {
   it('should iterate over list', () => {

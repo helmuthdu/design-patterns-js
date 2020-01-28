@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Person } from '../Person.es6.js';
+import { Person } from '../Person.es6';
 
 describe('creational->singleton: Person.es6', () => {
   it('sanity', () => {

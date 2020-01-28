@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { DroidFactory } from '../DroidFactory.es6.js';
+import { DroidFactory } from '../DroidFactory.es6';
 
 describe('creational->abstract-factory: DroidFactory.es6', () => {
   it('should create a battle droid', () => {

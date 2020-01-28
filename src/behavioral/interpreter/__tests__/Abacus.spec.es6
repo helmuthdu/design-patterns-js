@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { AbacusMin, AbacusSum, AbacusValue } from '../Abacus.es6.js';
+import { AbacusMin, AbacusSum, AbacusValue } from '../Abacus.es6';
 
 describe('behavioral->interpreter: Abacus.es6', () => {
   it('should perform a math operation', () => {

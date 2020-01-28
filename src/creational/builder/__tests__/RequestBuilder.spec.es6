@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { RequestBuilder } from '../RequestBuilder.es6.js';
+import { RequestBuilder } from '../RequestBuilder.es6';
 
 describe('creational->builder: RequestBuilder.es6', () => {
   it('should build request params', () => {

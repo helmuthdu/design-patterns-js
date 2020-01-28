@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Fees, Product, Profit } from '../Product.es6.js';
+import { Fees, Product, Profit } from '../Product.es6';
 
 describe('behavioral->observer: Product.es6', () => {
   it('should calculate product fees and profit', () => {

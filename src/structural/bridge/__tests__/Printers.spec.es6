@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { AcrylicInk, AlcoholInk, EpsonPrinter, HPPrinter } from '../Printers.es6.js';
+import { AcrylicInk, AlcoholInk, EpsonPrinter, HPPrinter } from '../Printers.es6';
 
 describe('structural->bridge: Printers.es6', () => {
   it('should create an Epson printer', () => {

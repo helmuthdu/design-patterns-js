@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Airplane, TrafficTower } from '../TrafficTower.es6.js';
+import { Airplane, TrafficTower } from '../TrafficTower.es6';
 
 describe('behavioral->mediator: TrafficTower.es6', () => {
   it('should get position of all airplanes', () => {

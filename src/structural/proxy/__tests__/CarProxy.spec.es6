@@ -1,7 +1,7 @@
 import { expect } from 'chai';
-import { CarProxy, Driver } from '../CarProxy.es6.js';
+import { CarProxy, Driver } from '../CarProxy.es6';
 
-describe('structural->proxy: CarProxy', () => {
+describe('structural->proxy: CarProxy.es6', () => {
   it('should start driving', () => {
     const driver = new Driver(28);
     const car = new CarProxy(driver);

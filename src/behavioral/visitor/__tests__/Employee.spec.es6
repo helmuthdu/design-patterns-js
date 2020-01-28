@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { BonusVisitor, Developer, Manager } from '../Employee.es6.js';
+import { BonusVisitor, Developer, Manager } from '../Employee.es6';
 
 describe('behavioral->visitor: Employee.ex6', () => {
   it('should calculate the right bonus for each employee', () => {

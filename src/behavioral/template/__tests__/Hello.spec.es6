@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Hallo, Hello, Hola } from '../Hello.es6.js';
+import { Hallo, Hello, Hola } from '../Hello.es6';
 
 describe('behavioral->template: Hello.es6', () => {
   it('should say hello in different languages', () => {

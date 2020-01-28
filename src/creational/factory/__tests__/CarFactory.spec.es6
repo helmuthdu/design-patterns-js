@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { CarFactory } from '../CarFactory.es6.js';
+import { CarFactory } from '../CarFactory.es6';
 
 describe('creational->factory: CarFactory.es6', () => {
   it('should create a car', () => {

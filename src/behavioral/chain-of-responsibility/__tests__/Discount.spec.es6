@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Discount, ShoppingCart } from '../Discount.es6.js';
+import { Discount, ShoppingCart } from '../Discount.es6';
 
 describe('behavioral->chain-of-responsibility: ShoppingCart.es6', () => {
   let shoppingCart;

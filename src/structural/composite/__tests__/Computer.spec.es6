@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Cabinet, VideoCard, HardDrive, Memory } from '../Computer.es6.js';
+import { Cabinet, VideoCard, HardDrive, Memory } from '../Computer.es6';
 
 describe('structural->composite: Computer.es6', () => {
   it('should create a cabinet with 3 components and sum total price', () => {

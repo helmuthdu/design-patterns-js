@@ -42,8 +42,8 @@ Most of these design patterns are specifically concerned with communication betw
 ## Testing
 To run the tests you just need to execute the following commands inside the project root folder:
 ```bash
-yarn
-yarn run tests
+npm install
+npm run tests
 ```
 
 ## Notes

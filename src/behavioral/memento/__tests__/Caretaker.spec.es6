@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Caretaker, Dictionary } from '../Caretaker.es6.js';
+import { Caretaker, Dictionary } from '../Caretaker.es6';
 
 describe('behavioral->memento: Caretaker.es6', () => {
   it('should create a list of words', () => {

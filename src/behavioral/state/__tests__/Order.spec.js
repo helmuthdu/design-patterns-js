@@ -9,7 +9,5 @@ describe('behavioral->state: Order', () => {
     expect(order.state.name).to.equal('shipping');
     order.nextState();
     expect(order.state.name).to.equal('delivered');
-    order.nextState();
-    expect(order.state.name).to.equal('delivered');
   });
 });

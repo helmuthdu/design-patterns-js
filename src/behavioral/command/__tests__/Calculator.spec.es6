@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { AddCommand, Calculator, DivisionCommand, MultiplyCommand, SubtractCommand } from '../Calculator.es6.js';
+import { AddCommand, Calculator, DivisionCommand, MultiplyCommand, SubtractCommand } from '../Calculator.es6';
 
 describe('behavioral->command: Calculator.es6', () => {
   let calculator;

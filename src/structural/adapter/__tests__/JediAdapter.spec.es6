@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Jedi, JediAdapter, Soldier } from '../JediAdapter.es6.js';
+import { Jedi, JediAdapter, Soldier } from '../JediAdapter.es6';
 
 describe('structural->adapter: JediAdapter.es6', () => {
   it('should create a soldier and a jedi', () => {

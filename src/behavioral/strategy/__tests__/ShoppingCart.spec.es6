@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { guestStrategy, premiumStrategy, regularStrategy, ShoppingCart } from '../ShoppingCart.es6.js';
+import { guestStrategy, premiumStrategy, regularStrategy, ShoppingCart } from '../ShoppingCart.es6';
 
 describe('behavioral->strategy: ShoppingCart.es6', () => {
   it('should apply guest discount', () => {

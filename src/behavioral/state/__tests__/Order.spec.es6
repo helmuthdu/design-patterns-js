@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import Order from '../Order.es6.js';
+import Order from '../Order.es6';
 
 describe('behavioral->state: Order.es6', () => {
   it('should change order status', () => {

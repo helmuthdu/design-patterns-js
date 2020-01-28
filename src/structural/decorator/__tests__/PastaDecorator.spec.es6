@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { CheeseDecorator, Penne, SauceDecorator } from '../PastaDecorator.es6.js';
+import { CheeseDecorator, Penne, SauceDecorator } from '../PastaDecorator.es6';
 
 describe('structural->decorator: PastaDecorator.es6', () => {
   it('should check pasta price with ingredients', () => {

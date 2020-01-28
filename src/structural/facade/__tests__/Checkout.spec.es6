@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Checkout } from '../Checkout.es6.js';
+import { Checkout } from '../Checkout.es6';
 
 describe('structural->facade: Checkout.es6', () => {
   it('should calculate checkout total', () => {

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Clonable } from '../Clonable.es6.js';
+import { Clonable } from '../Clonable.es6';
 
 describe('creational->prototype: Clonable.es6', () => {
   it('should create a clone', () => {

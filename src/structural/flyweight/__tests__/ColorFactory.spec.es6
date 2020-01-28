@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { colorFactory } from '../ColorFactory.es6.js';
+import { colorFactory } from '../ColorFactory.es6';
 
 describe('structural->flyweight: ColorFactory.es6', () => {
   it('create a dictionary of unique colors', () => {

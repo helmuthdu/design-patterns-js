@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Cockpit, OffCommand, OnCommand, SpeedDownCommand, SpeedUpCommand, Turbine } from '../Cockpit.es6.js';
+import { Cockpit, OffCommand, OnCommand, SpeedDownCommand, SpeedUpCommand, Turbine } from '../Cockpit.es6';
 
 describe('behavioral->command: Cockpit.es6', () => {
   let turbine;
